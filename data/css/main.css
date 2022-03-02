@@ -1,1 +1,30 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+
+.home-body {
+    background-image: none;
+}
+
+.contact-info {
+    position: relative;
+    display: inline;
+}
+
+.email-button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.email-tooltip-text {
+    
+}
+
+
