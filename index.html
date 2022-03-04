@@ -1,3 +1,7 @@
+<!--
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,11 +12,16 @@
         <link rel="stylesheet" href="data/css/main.css" />
     </head>
 
-    <script src="data/js/main.js"></script>
-
     <body class="body">
         <div class="wrapper">
-            <div class="card">
+            <div
+                class="card"
+                data-tilt
+                data-tilt-max="5"
+                data-tilt-glare
+                data-tilt-max-glare="0.1"
+                data-tilt-reverse="true"
+            >
                 <img
                     class="profile-pic"
                     src="data/images/self.JPG"
@@ -22,10 +31,13 @@
                 <h1 class="title-name">Peter Pham</h1>
                 <p class="job-title">Software Engineering Student</p>
                 <p class="description">
-                    Description here blah blah blah blah blah blah blah blah
-                    blah blah blah
+                    Highly organized and detail-oriented college student
+                    currently studying at the University of Texas at Dallas
+                    currently seeking mentorship and guidance through
+                    internships.
                 </p>
 
+                <!-- These are the social Links -->
                 <nav>
                     <ul>
                         <a
@@ -36,6 +48,7 @@
                                 src="data/images/icons/github.png"
                                 alt="icon for github link"
                                 class="social-links"
+                                id="github"
                         /></a>
                         <a
                             href="https://www.linkedin.com/in/peter-pham-9795b0194/"
@@ -45,6 +58,7 @@
                                 src="data/images/icons/linkedin.png"
                                 alt="icon for linkedin link"
                                 class="social-links"
+                                id="linkedin"
                         /></a>
                         <a
                             href="https://www.facebook.com/peter.pham.961/"
@@ -53,17 +67,23 @@
                                 src="data/images/icons/facebook-logo.png"
                                 alt=""
                                 class="social-links"
+                                id="facebook"
                         /></a>
                         <button id="email-button">
                             <img
                                 src="data/images/icons/email.png"
                                 alt=""
                                 class="social-links"
+                                id="email"
                             />
+                            <span id="email-tooltip">Copy to clipboard</span>
                         </button>
                     </ul>
                 </nav>
             </div>
         </div>
+
+        <script src="data/js/main.js"></script>
+        <script src="data/js/vanilla-tilt.js"></script>
     </body>
 </html>

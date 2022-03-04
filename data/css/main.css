@@ -33,7 +33,19 @@
     text-align: center;
     color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 5px 5px 5px rgb(24, 24, 24);
+    /* shadow for the card add pixels to make it more 3d*/
+    box-shadow: 6px 6px 10px rgb(58, 58, 58);
+    background: rgba(255, 255, 255, .35);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+
+    /* for the paralax but not implemented as of yet*/
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.js-tilt-glare {
+    border-radius: 16px;
 }
 
 .title-name {
@@ -60,13 +72,15 @@
     text-shadow: 5px;
 }
 
-.social-links {
+.card .social-links {
     width: 50px;
     height: 50px;
-    margin: 10px;
+    margin: 6px;
+    padding: 2px;
+    border-radius: 50%;
 }
 
-.social-links:hover {
+.card .social-links:hover {
     transform: scale(1.25);
     transition: 0.2s;
 }
@@ -75,5 +89,49 @@
     border: none;
     background: none;
     cursor: pointer;
+    border-radius: 50%;
 }
+
+#email-tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* positioning the tooltip */
+    position: absolute;
+    z-index: 1;
+    /* top: -5px; */
+    /* left: 105%; */
+
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#email-button:hover #email-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+#email-button #email-tooltip:after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+.card #facebook:hover { background: rgb(16, 105, 244);}
+.card #linkedin:hover {background: rgb(10, 102,194);}
+.card #email:hover { background: white;}
+.card #github:hover { background: rgb(240, 246, 252);}
+
+
+
 
