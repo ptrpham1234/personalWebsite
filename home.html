@@ -1,47 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Peter Pham's Personal Website</title>
+        <link rel="stylesheet" href="data/css/main.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peter Pham's Personal Website</title>
-    <link rel="stylesheet" href="data/css/main.css">
-</head>
+    <script src="data/js/main.js"></script>
 
-<script src="data/js/main.js"></script>
+    <body class="body">
+        <div class="wrapper">
+            <div class="card">
+                <img
+                    class="profile-pic"
+                    src="data/images/self.JPG"
+                    alt="Peter Pham's profile picture"
+                />
 
-<body>
-    <div class="wrapper">
+                <h1 class="title-name">Peter Pham</h1>
+                <p class="job-title">Software Engineering Student</p>
+                <p class="description">
+                    Description here blah blah blah blah blah blah blah blah
+                    blah blah blah
+                </p>
 
-        <div class="left-profile">
-
-            <img class="profile-pic" src="data/images/self.JPG" alt="Peter Pham's profile picture" width="400">
-
-            <h1 class="title-name">Peter Pham</h1>
-            <p class="job-title">Software Engineering Student</p>
-
-
+                <nav>
+                    <ul>
+                        <a
+                            href="https://github.com/ptrpham1234"
+                            target="_blank"
+                        >
+                            <img
+                                src="data/images/icons/github.png"
+                                alt="icon for github link"
+                                class="social-links"
+                            />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/peter-pham-9795b0194/"
+                            target="_blank"
+                        >
+                            <img
+                                src="data/images/icons/linkedin.png"
+                                alt="icon for linkedin link"
+                                class="social-links"
+                            />
+                        </a>
+                        <a
+                            href="https://www.facebook.com/peter.pham.961/"
+                            target="_blank"
+                            ><img
+                                src="data/images/icons/facebook-logo.png"
+                                alt=""
+                                class="social-links"
+                        /></a>
+                        <button id="email-button">
+                            <img
+                                src="data/images/icons/email.png"
+                                alt=""
+                                class="social-links"
+                            />
+                        </button>
+                    </ul>
+                </nav>
+            </div>
         </div>
-
-        <div class="right-profile">
-            <p>Description here blah blah blah blah blah blah blah blah blah blah blah </p>
-
-            <nav class="social-links">
-                <ul>
-                    <a href="https://github.com/ptrpham1234" target="_blank"> GitHub </a>
-                    <a href="https://www.linkedin.com/in/peter-pham-9795b0194/" target="_blank"> LinkedIn </a>
-                    <!-- Will add a section with clear glass contact me section later -->
-                    <a href="data/contact.html"> Contact Me</a>
-                </ul>
-            </nav>
-        </div>
-
-
-
-
-    </div>
-
-</body>
-
+    </body>
 </html>
