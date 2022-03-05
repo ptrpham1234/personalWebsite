@@ -37,7 +37,7 @@
     box-shadow: 6px 6px 10px rgb(58, 58, 58);
     background: rgba(255, 255, 255, .35);
     border-radius: 16px;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
 
     /* for the paralax but not implemented as of yet*/
     transform-style: preserve-3d;
