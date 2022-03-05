@@ -70,6 +70,7 @@
     object-fit: cover;
     border-radius: 50%;
     text-shadow: 5px;
+    transform: translateZ(35px)
 }
 
 .card .social-links {
