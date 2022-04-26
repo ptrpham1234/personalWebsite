@@ -55,7 +55,7 @@
   border-radius: 16px;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  /* for the paralax but not implemented as of yet*/
+  /* for the parallax but not implemented as of yet*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transform: perspective(1000px);
