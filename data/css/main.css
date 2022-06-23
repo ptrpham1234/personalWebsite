@@ -40,8 +40,9 @@
 }
 
 .card-content {
-  width: 90%;
-  max-width: 450px;
+  width: calc(100vh - 500px);
+  height: calc(100vh - 10px);
+  max-height: 600px;
   padding: 50px 35px;
   border: 1px solid;
   border-color: whitesmoke;
@@ -55,7 +56,7 @@
   border-radius: 16px;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  /* for the parallax but not implemented as of yet*/
+
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transform: perspective(1000px);
@@ -94,8 +95,8 @@
 }
 
 .card-content .social-links {
-  width: 50px;
-  height: 50px;
+  width: 6vh;
+  height: 6vh;
   margin: 6px;
   padding: 2px;
   border-radius: 50%;
