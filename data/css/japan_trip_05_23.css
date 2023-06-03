@@ -1,20 +1,66 @@
-.title{
+html {
+    scroll-behavior: smooth;
+}
 
-    font-size: 50px;
+body {
+    background: linear-gradient(to bottom right, #fecaff, white); /* Gradient colors */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.container {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+  }
+
+.title {
+
+    font-size: 80px;
+    font-family: 'Satisfy', cursive;
     text-align: center;
-    margin-top: 50px;
-
+    z-index: 1;
+    color: black;
 
 }
 
-.link-list{
+
+.link-list {
 
     list-style-type: none;
-    font-size: 25px;
+    font-family: 'Oxygen', sans-serif;
     text-align: center;
     margin: 70px;
 }
 
 li {
     padding: 10px;
+}
+
+
+button {
+    background-color: #6f47e4 ;
+    height: 80px;
+    width: 500px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    box-shadow: #ccc 0px 0px 3px;
+    transition: scale 0.2s ease;
+  }
+
+  button:hover {
+    scale: 1.05;
 }
