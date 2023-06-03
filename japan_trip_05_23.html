@@ -26,32 +26,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/sakura-js/dist/sakura.min.css">
 </head>
 
 <section></section>
 
 <body class="body">
     <section>
-        <div class="shine"></div>
         <div class="container">
             <div class="square-container">
                 <span class="title">Japan Trip : May 2023</span>
             </div>
         </div>
         <ul class="link-list">
-            <li><button>Travel Day</button></li>
-            <li><button>Day One</button></li>
-            <li><button>Day Two</button></li>
-            <li><button>Day Three</button></li>
-            <li><button>Day Four</button></li>
-            <li><button>Day Five</button></li>
+            <li><button onclick=" window.open('http://google.com','_blank')">Travel Day</button></li>
+            <li><button onclick=" window.open('http://google.com','_blank')">Day One</button></li>
+            <li><button onclick=" window.open('http://google.com','_blank')">Day Two</button></li>
+            <li><button onclick=" window.open('http://google.com','_blank')">Day Three</button></li>
+            <li><button onclick=" window.open('http://google.com','_blank')">Day Four</button></li>
+            <li><button onclick=" window.open('http://google.com','_blank')">Day Five</button></li>
         </ul>
     </section>
 
-    <script src="data/js/main.js"></script>
-    <script src="data/js/vanilla-tilt.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="node_modules/sakura-js/dist/sakura.min.js"></script>
+    <script>
+        // domReady
+        $(function () {
+            $.fn.sakura();
+        });
+
+        // windowLoad
+        $(window).load(function () {
+            $.fn.sakura({
+                blowAnimations: [
+                    'blow-soft-left',
+        ],                   // Horizontal movement animation names
+                className: 'sakura', // Class name to use
+                fallSpeed: 1,        // Factor for petal fall speed
+                maxSize: 14,         // Maximum petal size
+                minSize: 9,          // Minimum petal size
+                newOn: 300,          // Interval after which a new petal is added
+                swayAnimations: [    // Swaying animation names
+                    'sway-0',
+        ]
+            });
+        });
+    </script>
 </body>
 
 </html>
