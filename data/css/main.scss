@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+
+
+.body {
+    margin: 0;
+}
+
+.wrapper{
+    background-image: url("../images/contact-background3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.email {
+    position: relative;
+    display: inline;
+    color: rgb(255, 255, 255);
+    font-family: "Ubuntu", sans-serif;
+}
+
+.card {
+    margin-top: vh;
+    margin-left: vw;
+    margin-right: vw;
+}
+
+.card-content {
+    width: 90%;
+    max-width: 450px;
+    padding: 50px 35px;
+    border: 1px solid;
+    border-color: whitesmoke;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    /* shadow for the card add pixels to make it more 3d*/
+    box-shadow: 6px 6px 10px rgb(58, 58, 58);
+    background: rgba(255, 255, 255, .35);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+
+    /* for the paralax but not implemented as of yet*/
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.js-tilt-glare {
+    border-radius: 16px;
+}
+
+.title-name {
+    margin-top: 20px;
+    margin-bottom: auto;
+    font-size: 40px;
+}
+
+.job-title {
+    margin-top: 1px;
+}
+
+.description {
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 450px;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    text-shadow: 5px;
+    transform: translateZ(35px)
+}
+
+.card-content .social-links {
+    width: 50px;
+    height: 50px;
+    margin: 6px;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.card-content .social-links:hover {
+    transform: scale(1.25);
+    transition: 0.2s;
+}
+
+#email-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#email-tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* positioning the tooltip */
+    position: absolute;
+    z-index: 1;
+    /* top: -5px; */
+    /* left: 105%; */
+
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+
+#email-button::hover #email-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+#email-button #email-tooltip::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+.card-content #facebook:hover { background: rgb(16, 105, 244);}
+.card-content #linkedin:hover {background: rgb(10, 102,194);}
+.card-content #email:hover { background: white;}
+.card-content #github:hover { background: rgb(240, 246, 252);}
+
+.explore-button {
+    margin-top: 50px;
+    display: flex;
+    padding: 24px 48px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 6px;
+    color: black;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    background: white;
+    z-index: 1;
+    cursor: pointer;
+    transition: .8s ease-out;
+    box-shadow: 6px 6px 10px rgb(58, 58, 58);
+}
+
+.explore-button::hover {
+    color: black;
+}
+
+.explore-button::before {
+    content: "";
+    position: absolute;
+    background: white;
+    z-index: -1;
+    transition: top 0.8s;
+}
+
+.overlay {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #48A9A6;
+}

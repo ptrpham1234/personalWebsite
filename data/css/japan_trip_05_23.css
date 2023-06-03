@@ -1,0 +1,20 @@
+.title{
+
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+
+
+}
+
+.link-list{
+
+    list-style-type: none;
+    font-size: 25px;
+    text-align: center;
+    margin: 70px;
+}
+
+li {
+    padding: 10px;
+}
