@@ -1,7 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background: linear-gradient(to bottom right, #fecaff, white); /* Gradient colors */
     margin: 0;
